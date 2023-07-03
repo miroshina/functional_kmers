@@ -1,0 +1,658 @@
+K00014	shikimate dehydrogenase 
+K00211	prephenate dehydrogenase (NADP+) 
+K00220	cyclohexadieny/prephenate dehydrogenase 
+K00270	phenylalanine dehydrogenase 
+K00500	phenylalanine-4-hydroxylase 
+K00766	anthranilate phosphoribosyltransferase 
+K00800	3-phosphoshikimate 1-carboxyvinyltransferase 
+K00811	aspartate aminotransferase, chloroplastic 
+K00812	aspartate aminotransferase 
+K00813	aspartate aminotransferase 
+K00815	tyrosine aminotransferase 
+K00817	histidinol-phosphate aminotransferase 
+K00832	aromatic-amino-acid transaminase 
+K00838	aromatic amino acid aminotransferase I / 2-aminoadipate transaminase 
+K00891	shikimate kinase 
+K01609	indole-3-glycerol phosphate synthase 
+K01626	3-deoxy-7-phosphoheptulonate synthase 
+K01656	anthranilate synthase / indole-3-glycerol phosphate synthase 
+K01657	anthranilate synthase component I 
+K01658	anthranilate synthase component II 
+K01694	tryptophan synthase 
+K01695	tryptophan synthase alpha chain 
+K01696	tryptophan synthase beta chain 
+K01713	cyclohexadienyl dehydratase 
+K01735	3-dehydroquinate synthase 
+K01736	chorismate synthase 
+K01817	phosphoribosylanthranilate isomerase 
+K01850	chorismate mutase 
+K03334	L-amino-acid oxidase 
+K03785	3-dehydroquinate dehydratase I 
+K03786	3-dehydroquinate dehydratase II 
+K03856	3-deoxy-7-phosphoheptulonate synthase 
+K04092	chorismate mutase 
+K04093	chorismate mutase 
+K04516	chorismate mutase 
+K04517	prephenate dehydrogenase 
+K04518	prephenate dehydratase 
+K05358	quinate dehydrogenase (quinone) 
+K05359	arogenate/prephenate dehydratase 
+K05821	aromatic amino acid aminotransferase II 
+K05887	quinate/shikimate dehydrogenase 
+K06001	tryptophan synthase beta chain 
+K06208	chorismate mutase 
+K06209	chorismate mutase 
+K09483	3-dehydroshikimate dehydratase 
+K09484	quinate dehydrogenase 
+K11358	aspartate aminotransferase 
+K11646	3-dehydroquinate synthase II 
+K13497	anthranilate synthase/phosphoribosyltransferase 
+K13498	indole-3-glycerol phosphate synthase / phosphoribosylanthranilate isomerase 
+K13501	anthranilate synthase / indole-3-glycerol phosphate synthase / phosphoribosylanthranilate isom 
+K13503	anthranilate synthase 
+K13829	shikimate kinase / 3-dehydroquinate synthase 
+K13830	pentafunctional AROM polypeptide 
+K13832	3-dehydroquinate dehydratase / shikimate dehydrogenase 
+K13853	3-deoxy-7-phosphoheptulonate synthase / chorismate mutase 
+K14170	chorismate mutase / prephenate dehydratase 
+K14187	chorismate mutase / prephenate dehydrogenase 
+K14454	aspartate aminotransferase, cytoplasmic 
+K14455	aspartate aminotransferase, mitochondrial 
+K15226	arogenate dehydrogenase (NADP+) 
+K15227	arogenate dehydrogenase (NADP+), plant 
+K15849	bifunctional aspartate aminotransferase and glutamate/aspartate-prephenate aminotransferas 
+K16305	fructose-bisphosphate aldolase / 6-deoxy-5-ketofructose 1-phosphate synthase 
+K16306	fructose-bisphosphate aldolase / 2-amino-3,7-dideoxy-D-threo-hept-6-ulosonate synthase 
+K17748	benzylmalate synthase 
+K17749	3-benzylmalate isomerase 
+K17750	3-benzylmalate dehydrogenase 
+K18239	chorismatase 
+K18240	chorismate lyase / 3-hydroxybenzoate synthase 
+K24017	phosphoribosyl isomerase A 
+K24018	cyclohexadieny/prephenate dehydrogenase / 3-phosphoshikimate 1-carboxyvinyltransferase 
+K25901	quinate/shikimate dehydrogenase (NAD+) 
+K26400	3-dehydroshikimate dehydratase 
+K00032	phosphogluconate 2-dehydrogenase
+K00033	6-phosphogluconate dehydrogenase
+K00034	glucose 1-dehydrogenase
+K00036	glucose-6-phosphate 1-dehydrogenase
+K00059	3-oxoacyl-[acyl-carrier protein] reductase
+K00090	glyoxylate/hydroxypyruvate/2-ketogluconate reductase
+K00115	glucose 1-dehydrogenase (FAD, quinone)
+K00117	quinoprotein glucose dehydrogenase
+K00131	glyceraldehyde-3-phosphate dehydrogenase (NADP+)
+K00135	succinate-semialdehyde dehydrogenase / glutarate-semialdehyde dehydrogenase
+K00137	aminobutyraldehyde dehydrogenase
+K00208	enoyl-[acyl-carrier protein] reductase I
+K00209	enoyl-[acyl-carrier protein] reductase / trans-2-enoyl-CoA reductase (NAD+)
+K00232	acyl-CoA oxidase
+K00248	butyryl-CoA dehydrogenase
+K00249	acyl-CoA dehydrogenase
+K00290	saccharopine dehydrogenase (NAD+, L-lysine forming)
+K00293	saccharopine dehydrogenase (NADP+, L-glutamate forming)
+K00306	sarcosine oxidase / L-pipecolate oxidase 
+K00468	lysine 2-monooxygenase
+K00471	gamma-butyrobetaine dioxygenase 
+K00473	procollagen-lysine,2-oxoglutarate 5-dioxygenase 1
+K00474	trimethyllysine dioxygenase
+K00507	stearoyl-CoA desaturase (Delta-9 desaturase)
+K00615	transketolase
+K00616	transaldolase
+K00625	phosphate acetyltransferase
+K00632	acetyl-CoA acyltransferase
+K00645	[acyl-carrier-protein] S-malonyltransferase
+K00648	3-oxoacyl-[acyl-carrier-protein] synthase III
+K00824	D-alanine transaminase
+K00850	6-phosphofructokinase 1
+K00851	gluconokinase
+K00852	ribokinase
+K00874	2-dehydro-3-deoxygluconokinase
+K00895	diphosphate-dependent phosphofructokinase
+K00918	ADP-dependent phosphofructokinase/glucokinase
+K00925	acetate kinase
+K00948	ribose-phosphate pyrophosphokinase
+K01034	acetate CoA/acetoacetate CoA-transferase alpha subunit
+K01035	acetate CoA/acetoacetate CoA-transferase beta subunit
+K01041	glutaryl-CoA transferase 
+K01053	gluconolactonase
+K01057	6-phosphogluconolactonase
+K01086	fructose-1,6-bisphosphatase I / sedoheptulose-1,7-bisphosphatase
+K01506	5-aminopentanamidase
+K01582	lysine decarboxylase
+K01619	deoxyribose-phosphate aldolase
+K01621	xylulose-5-phosphate/fructose-6-phosphate phosphoketolase
+K01622	fructose 1,6-bisphosphate aldolase/phosphatase
+K01623	fructose-bisphosphate aldolase, class I
+K01624	fructose-bisphosphate aldolase, class II
+K01625	2-dehydro-3-deoxyphosphogluconate aldolase / (4S)-4-hydroxy-2-oxoglutarate aldolase
+K01690	phosphogluconate dehydratase
+K01692	enoyl-CoA hydratase
+K01716	3-hydroxyacyl-[acyl-carrier protein] dehydratase / trans-2-decenoyl-[acyl-carrier protein] isomerase
+K01782	3-hydroxyacyl-CoA dehydrogenase / enoyl-CoA hydratase / 3-hydroxybutyryl-CoA epimerase
+K01782	3-hydroxyacyl-CoA dehydrogenase / enoyl-CoA hydratase / 3-hydroxybutyryl-CoA epimerase 
+K01783	ribulose-phosphate 3-epimerase
+K01807	ribose 5-phosphate isomerase A
+K01808	ribose 5-phosphate isomerase B
+K01810	glucose-6-phosphate isomerase
+K01825	3-hydroxyacyl-CoA dehydrogenase / enoyl-CoA hydratase / 3-hydroxybutyryl-CoA epimerase / enoyl-CoA isomerase
+K01825	3-hydroxyacyl-CoA dehydrogenase / enoyl-CoA hydratase / 3-hydroxybutyryl-CoA epimerase / enoyl 
+K01835	phosphoglucomutase
+K01839	phosphopentomutase
+K01843	lysine 2,3-aminomutase 
+K01844	beta-lysine 5,6-aminomutase alpha subunit 
+K01895	acetyl-CoA synthetase
+K01897	long-chain acyl-CoA synthetase
+K01961	acetyl-CoA carboxylase, biotin carboxylase subunit
+K01962	acetyl-CoA carboxylase carboxyl transferase subunit alpha
+K01963	acetyl-CoA carboxylase carboxyl transferase subunit beta
+K02160	acetyl-CoA carboxylase biotin carboxyl carrier protein
+K02371	enoyl-[acyl-carrier protein] reductase II
+K02372	3-hydroxyacyl-[acyl-carrier-protein] dehydratase
+K02446	fructose-1,6-bisphosphatase II
+K03738	aldehyde:ferredoxin oxidoreductase
+K03841	fructose-1,6-bisphosphatase I
+K03921	acyl-[acyl-carrier-protein] desaturase
+K03922	acyl-[acyl-carrier-protein] desaturase
+K04041	fructose-1,6-bisphosphatase III
+K04462	[histone H3]-lysine9 N-methyltransferase (ecotropic virus integration site 1 pro 
+K05308	gluconate/galactonate dehydratase
+K05774	ribose 1,5-bisphosphokinase
+K06101	[histone H3]-lysine4 N-trimethyltransferase ASH1L 
+K06151	gluconate 2-dehydrogenase alpha chain
+K06152	gluconate 2-dehydrogenase gamma chain
+K06445	acyl-CoA dehydrogenase
+K06859	glucose-6-phosphate isomerase, archaeal
+K07250	4-aminobutyrate aminotransferase / (S)-3-amino-2-methylpropionate transaminase / 5-aminovalera 
+K07404	6-phosphogluconolactonase
+K07511	enoyl-CoA hydratase
+K07514	enoyl-CoA hydratase / 3-hydroxyacyl-CoA dehydrogenase / 3,2-trans-enoyl-CoA isomerase
+K07515	enoyl-CoA hydratase / long-chain 3-hydroxyacyl-CoA dehydrogenase 
+K07516	3-hydroxyacyl-CoA dehydrogenase
+K08093	3-hexulose-6-phosphate synthase
+K08094	6-phospho-3-hexuloisomerase
+K09186	[histone H3]-lysine4 N-trimethyltransferase MLL1 
+K09187	[histone H3]-lysine4 N-trimethyltransferase MLL2 
+K09188	[histone H3]-lysine4 N-trimethyltransferase MLL3 
+K09189	[histone H3]-lysine4 N-trimethyltransferase MLL5 
+K09251	putrescine aminotransferase [EC:2.6.1.82] 
+K09458	3-oxoacyl-[acyl-carrier-protein] synthase II
+K11395	2-dehydro-3-deoxy-phosphogluconate/2-dehydro-3-deoxy-6-phosphogalactonate aldolase
+K11419	[histone H3]-lysine9 N-trimethyltransferase SUV39H
+K11420	[histone H3]-lysine9 N-trimethyltransferase EHMT
+K11421	[histone H3]-N6,N6-dimethyl-lysine9 N-methyltransferase 
+K11422	[histone H3]-lysine4 N-trimethyltransferase SETD1
+K11423	[histone H3]-lysine36 N-trimethyltransferase
+K11424	[histone H3]-lysine36 N-dimethyltransferase NSD2
+K11425	[histone H3]-lysine4 N-dimethyltransferase / [histone H3]-lysine27 N-dimethyltransfer 
+K11426	[histone H3]-lysine4/36 N-trimethyltransferase SMYD  
+K11427	[histone H3]-lysine79 N-trimethyltransferase
+K11428	[histone H4]-lysine20 N-methyltransferase SETD8
+K11429	[histone H4]-N-methyl-L-lysine20 N-methyltransferase
+K11430	[histone H3]-lysine27 N-trimethyltransferase EZH2
+K11431	[histone H3]-lysine4 N-methyltransferase
+K11432	[histone H3]-lysine9 N-trimethyltransferase PRDM2
+K11433	[histone H3]-lysine36 N-dimethyltransferase SETMAR 
+K11441	dehydrogluconokinase
+K11529	glycerate 2-kinase
+K11532	fructose-1,6-bisphosphatase II / sedoheptulose-1,7-bisphosphatase
+K11645	fructose-bisphosphate aldolase, class I
+K11703	collagen beta-1,O-galactosyltransferase
+K13609	delta1-piperideine-2-carboxylate reductase 
+K13645	procollagen-lysine,2-oxoglutarate 5-dioxygenase 2
+K13646	lysyl hydroxylase/galactosyltransferase/glucosyltransferase
+K13647	procollagen-lysine,2-oxoglutarate 5-dioxygenase, invertebrate
+K13788	phosphate aceryltransferase
+K13810	transaldolase / glucose-6-phosphate isomerase
+K13812	bifunctional enzyme Fae/Hps
+K13831	3-hexulose-6-phosphate synthase / 6-phospho-3-hexuloisomerase
+K13937	hexose-6-phosphate dehydrogenase
+K14085	aldehyde dehydrogenase family 7 member A1
+K14157	alpha-aminoadipic semialdehyde synthase
+K14268	5-aminovalerate/4-aminobutyrate aminotransferase
+K14959	[histone H3]-lysine4 N-trimethyltransferase MLL4
+K15588	[histone H3]-lysine36 N-dimethyltransferase NSD1 
+K15736	(S)-2-hydroxyglutarate dehydrogenase
+K15737	glutarate dioxygenase
+K15778	phosphomannomutase / phosphoglucomutase
+K15779	phosphoglucomutase / phosphopentomutase
+K15791	2-oxoadipate dehydrogenase E1 component
+K15868	bile acid-coenzyme A ligase
+K15916	glucose/mannose-6-phosphate isomerase
+K16305	fructose-bisphosphate aldolase / 6-deoxy-5-ketofructose 1-phosphate synthase
+K16306	fructose-bisphosphate aldolase / 2-amino-3,7-dideoxy-D-threo-hept-6-ulosonate synthase
+K16370	6-phosphofructokinase 2
+K17451	[histone H3]-lysine27 N-trimethyltransferase EZH1
+K17463	2-dehydro-3-deoxy-phosphogluconate aldolase
+K17464	D-glucosaminate PTS system EIIA component
+K17465	D-glucosaminate PTS system EIIB component
+K17466	D-glucosaminate PTS system EIIC component
+K17467	D-glucosaminate PTS system EIID component
+K17468	D-glucosaminate-6-phosphate ammonia-lyase
+K18011	beta-lysine 5,6-aminomutase beta subunit 
+K18012	L-erythro-3,5-diaminohexanoate dehydrogenase 
+K18013	3-keto-5-aminohexanoate cleavage enzyme
+K18014	3-aminobutyryl-CoA ammonia-lyase
+K18020	glyceraldehyde dehydrogenase large subunit
+K18021	glyceraldehyde dehydrogenase medium subunit
+K18022	glyceraldehyde dehydrogenase small subunit
+K18124	glucose/galactose 1-dehydrogenase (NADP+)
+K18125	aldose 1-dehydrogenase [NAD(P)+]
+K18126	2-dehydro-3-deoxygluconokinase / 2-dehydro-3-deoxygalactonokinase
+K18127	2-dehydro-3-deoxy-D-gluconate aldolase
+K18128	D-glyceraldehyde dehydrogenase (NADP+)
+K18201	hydroxylysine kinase 
+K18202	5-phosphonooxy-L-lysine phospho-lyase 
+K18237	ribose 1,5-bisphosphate isomerase
+K18494	[histone H3]-lysine9 N-trimethyltransferase SETDB2 
+K18804	[cytochrome c]-lysine N-methyltransferase
+K18826	calmodulin-lysine N-methyltransferase
+K18854	acetyl-CoA:lysine N6-acetyltransferase
+K18978	glyceraldehyde-3-phosphate dehydrogenase [NAD(P)+]
+K19243	NAD+ dependent glucose-6-phosphate dehydrogenase
+K19743	1-piperideine-2-carboxylate/1-pyrroline-2-carboxylate reductase [NAD(P)H]
+K19813	glucose dehydrogenase
+K20795	[histone H4]-lysine20 N-methyltransferase PRDM6
+K20796	[histone H3]-lysine4 N-trimethyltransferase PRDM7/9
+K21056	alpha-D-ribose-1-phosphate 5-kinase (ADP)
+K21071	ATP-dependent phosphofructokinase / diphosphate-dependent phosphofructokinase
+K21672	2,4-diaminopentanoate dehydrogenase
+K21840	hexose oxidase
+K22199	phosphopentomutase
+K22229	2-ketogluconate reductase
+K22345	glucosaminate ammonia-lyase
+K22410	[histone H3]-lysine9 N-methyltransferase
+K22748	[histone H3]-lysine4 N-trimethyltransferase ATXR3
+K22969	glucose 1-dehydrogenase
+K23385	D-ornithine/D-lysine decarboxylase
+K23700	[histone H3]-lysine36 N-trimethyltransferase 
+K24034	spermidine synthase / saccharopine dehydrogenase (NADP+, L-glutamate-forming) 
+K24182	6-phosphofructokinase
+K24405	[histone H3]-lysine9 N-dimethyltransferase
+K24406	[histone H3]-lysine27 N-methyltransferase
+K24407	[histone H4]-lysine20 N-trimethyltransferase
+K25031	gluconokinase
+K25316	amino-acid racemase 
+K25317	amino-acid racemase
+K25986	2-oxoadipate dioxygenase/decarboxylase
+K26061	L-aminoadipate-semialdehyde dehydrogenase 
+K26062	2-aminoadipate transaminase
+K26063	(R)-2-hydroxyglutarate dehydrogenase
+K26064	D-lysine oxidase
+K26065	L-pipecolate oxidase
+K26208	alpha-D-ribose-1-phosphate 5-kinase (ATP)
+K00022	3-hydroxyacyl-CoA dehydrogenase 
+K00059	3-oxoacyl-[acyl-carrier protein] reductase 
+K00208	enoyl-[acyl-carrier protein] reductase I 
+K00209	enoyl-[acyl-carrier protein] reductase / trans-2-enoyl-CoA reductase (NAD+) 
+K00232	acyl-CoA oxidase 
+K00248	butyryl-CoA dehydrogenase 
+K00249	acyl-CoA dehydrogenase 
+K00255	long-chain-acyl-CoA dehydrogenase 
+K00507	stearoyl-CoA desaturase (Delta-9 desaturase) 
+K00626	acetyl-CoA C-acetyltransferase 
+K00632	acetyl-CoA acyltransferase 
+K00645	[acyl-carrier-protein] S-malonyltransferase 
+K00647	3-oxoacyl-[acyl-carrier-protein] synthase I 
+K00648	3-oxoacyl-[acyl-carrier-protein] synthase III 
+K00665	fatty acid synthase, animal type 
+K00667	fatty acid synthase subunit alpha, fungi type 
+K00668	fatty acid synthase subunit beta, fungi type 
+K01074	palmitoyl-protein thioesterase 
+K01692	enoyl-CoA hydratase 
+K01716	3-hydroxyacyl-[acyl-carrier protein] dehydratase / trans-2-decenoyl-[acyl-carrier protein] isomerase
+K01782	3-hydroxyacyl-CoA dehydrogenase / enoyl-CoA hydratase / 3-hydroxybutyryl-CoA epimerase 
+K01825	3-hydroxyacyl-CoA dehydrogenase / enoyl-CoA hydratase / 3-hydroxybutyryl-CoA epimerase / enoyl 
+K01897	long-chain acyl-CoA synthetase 
+K01961	acetyl-CoA carboxylase, biotin carboxylase subunit 
+K01962	acetyl-CoA carboxylase carboxyl transferase subunit alpha 
+K01963	acetyl-CoA carboxylase carboxyl transferase subunit beta 
+K02160	acetyl-CoA carboxylase biotin carboxyl carrier protein 
+K02371	enoyl-[acyl-carrier protein] reductase II 
+K02372	3-hydroxyacyl-[acyl-carrier-protein] dehydratase 
+K03921	acyl-[acyl-carrier-protein] desaturase 
+K03922	acyl-[acyl-carrier-protein] desaturase 
+K06445	acyl-CoA dehydrogenase 
+K07508	acetyl-CoA acyltransferase 2 
+K07509	acetyl-CoA acyltransferase 
+K07511	enoyl-CoA hydratase 
+K07512	mitochondrial enoyl-[acyl-carrier protein] reductase / trans-2-enoyl-CoA reductase 
+K07513	acetyl-CoA acyltransferase 1 
+K07514	enoyl-CoA hydratase / 3-hydroxyacyl-CoA dehydrogenase / 3,2-trans-enoyl-CoA isomerase 
+K07515	enoyl-CoA hydratase / long-chain 3-hydroxyacyl-CoA dehydrogenase 
+K07516	3-hydroxyacyl-CoA dehydrogenase 
+K08764	sterol carrier protein 2 
+K08765	carnitine O-palmitoyltransferase 1, liver isoform 
+K08766	carnitine O-palmitoyltransferase 2 
+K09458	3-oxoacyl-[acyl-carrier-protein] synthase II 
+K09478	short-chain 2-methylacyl-CoA dehydrogenase 
+K09479	very long chain acyl-CoA dehydrogenase 
+K10203	elongation of very long chain fatty acids protein 6 
+K10205	elongation of very long chain fatty acids protein 2 
+K10224	acyl-CoA (8-3)-desaturase (Delta-5 desaturase) 
+K10226	acyl-CoA 6-desaturase (Delta-6 desaturase) 
+K10244	elongation of very long chain fatty acids protein 5 
+K10245	fatty acid elongase 2 
+K10246	fatty acid elongase 3 
+K10247	elongation of very long chain fatty acids protein 1 
+K10248	elongation of very long chain fatty acids protein 3 
+K10249	elongation of very long chain fatty acids protein 4 
+K10250	elongation of very long chain fatty acids protein 7 
+K10251	17beta-estradiol 17-dehydrogenase / very-long-chain 3-oxoacyl-CoA reductase 
+K10256	omega-6 fatty acid desaturase / acyl-lipid omega-6 desaturase (Delta-12 desaturase) 
+K10258	very-long-chain enoyl-CoA reductase 
+K10527	enoyl-CoA hydratase/3-hydroxyacyl-CoA dehydrogenase 
+K10703	very-long-chain (3R)-3-hydroxyacyl-CoA dehydratase 
+K10780	enoyl-[acyl-carrier protein] reductase III 
+K10781	fatty acyl-ACP thioesterase B 
+K11262	acetyl-CoA carboxylase / biotin carboxylase 1 
+K11263	acetyl-CoA/propionyl-CoA carboxylase, biotin carboxylase, biotin carboxyl carrier protei 
+K11533	fatty acid synthase, bacteria type 
+K11539	carbonyl reductase 4 / 3-oxoacyl-[acyl-carrier protein] reductase beta subunit 
+K12405	(3R)-3-hydroxyacyl-CoA dehydrogenase / 3a,7a,12a-trihydroxy-5b-cholest-24-enoyl-CoA hydrata 
+K13370	17beta-estradiol 17-dehydrogenase / 3alpha(17beta)-hydroxysteroid dehydrogenase (NAD+) / 3-oxoacyl-[acyl-carrier protein] reductase alpha subunit
+K13767	enoyl-CoA hydratase 
+K15013	long-chain-fatty-acid--CoA ligase ACSBG 
+K16363	UDP-3-O-[3-hydroxymyristoyl] N-acetylglucosamine deacetylase / 3-hydroxyacyl-[acyl-carrier-protein] dehydratase
+K18472	acetyl-CoA/propionyl-CoA carboxylase carboxyl transferase subunit 
+K18473	acetoacetyl-[acyl-carrier protein] synthase 
+K18660	malonyl-CoA/methylmalonyl-CoA synthetase 
+K19523	carnitine O-palmitoyltransferase 1, muscle isoform 
+K19524	carnitine O-palmitoyltransferase 1, brain isoform 
+K22540	3-hydroxyacyl-thioester dehydratase, animal type 
+K22541	3-hydroxyacyl-thioester dehydratase, fungi type 
+K22769	NADPH-dependent stearoyl-CoA 9-desaturase 
+K22770	stearoyl-CoA 9-desaturase NADPH oxidoreductase 
+K22993	bifunctional Delta-12/omega-3 fatty acid desaturase 
+K23006	omega-3 fatty acid desaturase (Delta-15 desaturase)
+K00022	3-hydroxyacyl-CoA dehydrogenase
+K00128	aldehyde dehydrogenase (NAD+)
+K00135	succinate-semialdehyde dehydrogenase / glutarate-semialdehyde dehydrogenase 
+K00137	aminobutyraldehyde dehydrogenase 
+K00149	aldehyde dehydrogenase family 9 member A1 
+K00252	glutaryl-CoA dehydrogenase 
+K00290	saccharopine dehydrogenase (NAD+, L-lysine forming) 
+K00293	saccharopine dehydrogenase (NADP+, L-glutamate forming) 
+K00306	sarcosine oxidase / L-pipecolate oxidase 
+K00382	dihydrolipoyl dehydrogenase 
+K00468	lysine 2-monooxygenase 
+K00471	gamma-butyrobetaine dioxygenase 
+K00473	procollagen-lysine,2-oxoglutarate 5-dioxygenase 1 
+K00474	trimethyllysine dioxygenase 
+K00626	acetyl-CoA C-acetyltransferase 
+K00658	2-oxoglutarate dehydrogenase E2 component (dihydrolipoamide succinyltransferase) 
+K00824	D-alanine transaminase 
+K00825	kynurenine/2-aminoadipate aminotransferase 
+K01034	acetate CoA/acetoacetate CoA-transferase alpha subunit 
+K01035	acetate CoA/acetoacetate CoA-transferase beta subunit 
+K01041	glutaryl-CoA transferase 
+K01506	5-aminopentanamidase 
+K01582	lysine decarboxylase 
+K01692	enoyl-CoA hydratase 
+K01782	3-hydroxyacyl-CoA dehydrogenase / enoyl-CoA hydratase / 3-hydroxybutyryl-CoA epimerase 
+K01825	3-hydroxyacyl-CoA dehydrogenase / enoyl-CoA hydratase / 3-hydroxybutyryl-CoA epimerase / enoyl 
+K01843	lysine 2,3-aminomutase 
+K01844	beta-lysine 5,6-aminomutase alpha subunit 
+K04462	[histone H3]-lysine9 N-methyltransferase (ecotropic virus integration site 1 pro 
+K06101	[histone H3]-lysine4 N-trimethyltransferase ASH1L 
+K07250	4-aminobutyrate aminotransferase / (S)-3-amino-2-methylpropionate transaminase / 5-aminovalera 
+K07511	enoyl-CoA hydratase 
+K07514	enoyl-CoA hydratase / 3-hydroxyacyl-CoA dehydrogenase / 3,2-trans-enoyl-CoA isomerase 
+K07515	enoyl-CoA hydratase / long-chain 3-hydroxyacyl-CoA dehydrogenase 
+K09186	[histone H3]-lysine4 N-trimethyltransferase MLL1 
+K09187	[histone H3]-lysine4 N-trimethyltransferase MLL2 
+K09188	[histone H3]-lysine4 N-trimethyltransferase MLL3 
+K09189	[histone H3]-lysine4 N-trimethyltransferase MLL5 
+K09251	putrescine aminotransferase 
+K11419	[histone H3]-lysine9 N-trimethyltransferase SUV39H 
+K11420	[histone H3]-lysine9 N-trimethyltransferase EHMT 
+K11421	[histone H3]-N6,N6-dimethyl-lysine9 N-methyltransferase 
+K11422	[histone H3]-lysine4 N-trimethyltransferase SETD1 
+K11423	[histone H3]-lysine36 N-trimethyltransferase 
+K11424	[histone H3]-lysine36 N-dimethyltransferase NSD2 
+K11425	[histone H3]-lysine4 N-dimethyltransferase / 
+K11426	[histone H3]-lysine4/36 N-trimethyltransferase SMYD 
+K11427	[histone H3]-lysine79 N-trimethyltransferase 
+K11428	[histone H4]-lysine20 N-methyltransferase SETD8 
+K11429	[histone H4]-N-methyl-L-lysine20 N-methyltransferase 
+K11430	[histone H3]-lysine27 N-trimethyltransferase EZH2 
+K11431	[histone H3]-lysine4 N-methyltransferase 
+K11432	[histone H3]-lysine9 N-trimethyltransferase PRDM2 
+K11433	[histone H3]-lysine36 N-dimethyltransferase SETMAR 
+K11703	collagen beta-1,O-galactosyltransferase 
+K13609	delta1-piperideine-2-carboxylate reductase 
+K13645	procollagen-lysine,2-oxoglutarate 5-dioxygenase 2 
+K13646	lysyl hydroxylase/galactosyltransferase/glucosyltransferase 
+K13647	procollagen-lysine,2-oxoglutarate 5-dioxygenase, invertebrate 
+K14085	aldehyde dehydrogenase family 7 member A1 
+K14157	alpha-aminoadipic semialdehyde synthase 
+K14268	5-aminovalerate/4-aminobutyrate aminotransferase 
+K14959	[histone H3]-lysine4 N-trimethyltransferase MLL4 
+K15588	[histone H3]-lysine36 N-dimethyltransferase NSD1 
+K15736	(S)-2-hydroxyglutarate dehydrogenase 
+K15737	glutarate dioxygenase 
+K15791	2-oxoadipate dehydrogenase E1 component 
+K17451	[histone H3]-lysine27 N-trimethyltransferase EZH1 
+K18011	beta-lysine 5,6-aminomutase beta subunit 
+K18012	L-erythro-3,5-diaminohexanoate dehydrogenase 
+K18013	3-keto-5-aminohexanoate cleavage enzyme 
+K18014	3-aminobutyryl-CoA ammonia-lyase 
+K18201	hydroxylysine kinase 
+K18202	5-phosphonooxy-L-lysine phospho-lyase 
+K18494	[histone H3]-lysine9 N-trimethyltransferase SETDB2 
+K18804	[cytochrome c]-lysine N-methyltransferase 
+K18826	calmodulin-lysine N-methyltransferase 
+K18854	acetyl-CoA:lysine N6-acetyltransferase 
+K19743	1-piperideine-2-carboxylate/1-pyrroline-2-carboxylate reductase 
+K20795	[histone H4]-lysine20 N-methyltransferase PRDM6 
+K20796	[histone H3]-lysine4 N-trimethyltransferase PRDM7/9 
+K21672	2,4-diaminopentanoate dehydrogenase 
+K22410	[histone H3]-lysine9 N-methyltransferase 
+K22748	[histone H3]-lysine4 N-trimethyltransferase ATXR3 
+K23385	D-ornithine/D-lysine decarboxylase 
+K23700	[histone H3]-lysine36 N-trimethyltransferase 
+K24034	spermidine synthase / saccharopine dehydrogenase (NADP+, L-glutamate-forming) 
+K24405	[histone H3]-lysine9 N-dimethyltransferase 
+K24406	[histone H3]-lysine27 N-methyltransferase 
+K24407	[histone H4]-lysine20 N-trimethyltransferase 
+K25316	amino-acid racemase 
+K25317	amino-acid racemase 
+K25986	2-oxoadipate dioxygenase/decarboxylase 
+K26061	L-aminoadipate-semialdehyde dehydrogenase 
+K26062	2-aminoadipate transaminase 
+K26063	(R)-2-hydroxyglutarate dehydrogenase 
+K26064	D-lysine oxidase 
+K26065	L-pipecolate oxidase
+K00022	3-hydroxyacyl-CoA dehydrogenase 
+K00128	aldehyde dehydrogenase (NAD+) 
+K00149	aldehyde dehydrogenase family 9 member A1 
+K00157	aldehyde oxidase 
+K00252	glutaryl-CoA dehydrogenase 
+K00274	monoamine oxidase 
+K00382	dihydrolipoyl dehydrogenase 
+K00452	3-hydroxyanthranilate 3,4-dioxygenase 
+K00453	tryptophan 2,3-dioxygenase 
+K00463	indoleamine 2,3-dioxygenase 
+K00466	tryptophan 2-monooxygenase 
+K00486	kynurenine 3-monooxygenase 
+K00502	tryptophan 5-monooxygenase 
+K00543	acetylserotonin O-methyltransferase 
+K00562	methyltransferase 
+K00626	acetyl-CoA C-acetyltransferase 
+K00658	2-oxoglutarate dehydrogenase E2 component (dihydrolipoamide succinyltransferase) 
+K00669	arylalkylamine N-acetyltransferase 
+K00816	kynurenine---oxoglutarate transaminase / cysteine-S-conjugate beta-lyase / glutamine---phenylpyruvate transaminase
+K00825	kynurenine/2-aminoadipate aminotransferase 
+K00837	aromatic aminotransferase 
+K00838	aromatic amino acid aminotransferase I / 2-aminoadipate transaminase 
+K01237	myrosinase 
+K01426	amidase 
+K01432	arylformamidase 
+K01501	nitrilase 
+K01556	kynureninase 
+K01593	aromatic-L-amino-acid/L-tryptophan decarboxylase 
+K01667	tryptophanase 
+K01692	enoyl-CoA hydratase 
+K01721	nitrile hydratase subunit alpha 
+K01782	3-hydroxyacyl-CoA dehydrogenase / enoyl-CoA hydratase / 3-hydroxybutyryl-CoA epimerase 
+K01825	3-hydroxyacyl-CoA dehydrogenase / enoyl-CoA hydratase / 3-hydroxybutyryl-CoA epimerase / enoyl 
+K03334	L-amino-acid oxidase 
+K03392	aminocarboxymuconate-semialdehyde decarboxylase 
+K03781	catalase 
+K03782	catalase-peroxidase 
+K04103	indolepyruvate decarboxylase 
+K07130	arylformamidase 
+K07408	cytochrome P450 family 1 subfamily A1 
+K07409	cytochrome P450 family 1 subfamily A2 
+K07410	cytochrome P450 family 1 subfamily B1 
+K07511	enoyl-CoA hydratase 
+K07514	enoyl-CoA hydratase / 3-hydroxyacyl-CoA dehydrogenase / 3,2-trans-enoyl-CoA isomerase 
+K07515	enoyl-CoA hydratase / long-chain 3-hydroxyacyl-CoA dehydrogenase 
+K10217	aminomuconate-semialdehyde/2-hydroxymuconate-6-semialdehyde dehydrogenase 
+K11182	diamine oxidase 
+K11812	tryptophan N-monooxygenase 
+K11813	tryptophan N-monooxygenase 
+K11816	indole-3-pyruvate monooxygenase 
+K11817	indole-3-acetaldehyde oxidase 
+K11818	aromatic aldoxime N-monooxygenase 
+K11819	S-alkyl-thiohydroximate lyase SUR1 
+K11820	N-hydroxythioamide S-beta-glucosyltransferase 
+K11821	aromatic desulfoglucosinolate sulfotransferase 
+K11868	indoleacetaldoxime dehydratase 
+K13066	caffeic acid 3-O-methyltransferase / acetylserotonin O-methyltransferase 
+K14085	aldehyde dehydrogenase family 7 member A1 
+K14263	kynurenine formamidase 
+K14264	kynurenine aminotransferase 
+K14265	tryptophan aminotransferase 
+K14338	cytochrome P450 / NADPH-cytochrome P450 reductase 
+K15067	2-aminomuconate deaminase 
+K15791	2-oxoadipate dehydrogenase E1 component 
+K16901	anthranilate 3-monooxygenase (FAD) / 4-hydroxyphenylacetate 3-monooxygenase 
+K16902	FAD reductase [NAD(P)H] 
+K16903	L-tryptophan---pyruvate aminotransferase 
+K20204	grixazone synthase / o-aminophenol oxidase 
+K20219	o-aminophenol oxidase 
+K20807	nitrile hydratase subunit beta 
+K21801	indoleacetamide hydrolase 
+K22417	benzaldehyde dehydrogenase (NAD+) / indole-3-acetaldehyde oxidase 
+K22433	L-tryptophan decarboxylase 
+K22450	aralkylamine N-acetyltransferase 
+K22588	acetylserotonin O-methyltransferase, plant 
+K23109	aromatic 2-oxoacid reductase 
+K23234	aminomuconate-semialdehyde dehydrogenase 
+K23384	indoleacetate decarboxylase 
+K23947	2-oxoglutarate-dependent dioxygenase 
+K24541	tryptamine 5-hydroxylase
+K00004	(R,R)-butanediol dehydrogenase / meso-butanediol dehydrogenase / diacetyl reductase 
+K00019	3-hydroxybutyrate dehydrogenase 
+K00022	3-hydroxyacyl-CoA dehydrogenase 
+K00023	acetoacetyl-CoA reductase 
+K00043	4-hydroxybutyrate dehydrogenase 
+K00074	3-hydroxybutyryl-CoA dehydrogenase 
+K00100	butanol dehydrogenase 
+K00109	2-hydroxyglutarate dehydrogenase 
+K00132	acetaldehyde dehydrogenase (acetylating) 
+K00135	succinate-semialdehyde dehydrogenase / glutarate-semialdehyde dehydrogenase 
+K00139	succinate-semialdehyde dehydrogenase 
+K00169	pyruvate ferredoxin oxidoreductase alpha subunit 
+K00170	pyruvate ferredoxin oxidoreductase beta subunit 
+K00171	pyruvate ferredoxin oxidoreductase delta subunit 
+K00172	pyruvate ferredoxin oxidoreductase gamma subunit 
+K00174	2-oxoglutarate/2-oxoacid ferredoxin oxidoreductase subunit alpha 
+K00175	2-oxoglutarate/2-oxoacid ferredoxin oxidoreductase subunit beta 
+K00189	2-oxoisovalerate/pyruvate ferredoxin oxidoreductase gamma subunit 
+K00209	enoyl-[acyl-carrier protein] reductase / trans-2-enoyl-CoA reductase (NAD+) 
+K00233	succinate dehydrogenase flavoprotein subunit 
+K00239	succinate dehydrogenase flavoprotein subunit 
+K00240	succinate dehydrogenase iron-sulfur subunit 
+K00241	succinate dehydrogenase cytochrome b subunit 
+K00242	succinate dehydrogenase membrane anchor subunit 
+K00244	succinate dehydrogenase flavoprotein subunit 
+K00245	succinate dehydrogenase iron-sulfur subunit 
+K00246	succinate dehydrogenase subunit C 
+K00247	succinate dehydrogenase subunit D 
+K00248	butyryl-CoA dehydrogenase 
+K00626	acetyl-CoA C-acetyltransferase 
+K00634	phosphate butyryltransferase 
+K00656	formate C-acetyltransferase 
+K00823	4-aminobutyrate aminotransferase 
+K00929	butyrate kinase 
+K01027	3-oxoacid CoA-transferase 
+K01028	3-oxoacid CoA-transferase subunit A 
+K01029	3-oxoacid CoA-transferase subunit B 
+K01034	acetate CoA/acetoacetate CoA-transferase alpha subunit 
+K01035	acetate CoA/acetoacetate CoA-transferase beta subunit 
+K01039	glutaconate CoA-transferase, subunit A 
+K01040	glutaconate CoA-transferase, subunit B 
+K01574	acetoacetate decarboxylase 
+K01575	acetolactate decarboxylase 
+K01580	glutamate decarboxylase 
+K01615	glutaconyl-CoA decarboxylase subunit alpha 
+K01640	hydroxymethylglutaryl-CoA lyase 
+K01641	hydroxymethylglutaryl-CoA synthase 
+K01652	acetolactate synthase I/II/III large subunit 
+K01653	acetolactate synthase I/III small subunit 
+K01692	enoyl-CoA hydratase 
+K01715	enoyl-CoA hydratase 
+K01782	3-hydroxyacyl-CoA dehydrogenase / enoyl-CoA hydratase / 3-hydroxybutyryl-CoA epimerase 
+K01799	maleate isomerase 
+K01825	3-hydroxyacyl-CoA dehydrogenase / enoyl-CoA hydratase / 3-hydroxybutyryl-CoA epimerase / enoyl-CoA isomerase
+K01896	medium-chain acyl-CoA synthetase 
+K01907	acetoacetyl-CoA synthetase 
+K01913	acetate/butyrate---CoA ligase 
+K03366	meso-butanediol dehydrogenase / (S,S)-butanediol dehydrogenase / diacetyl reductase 
+K03737	pyruvate-ferredoxin/flavodoxin oxidoreductase 
+K03821	poly[(R)-3-hydroxyalkanoate] polymerase subunit PhaC 
+K04072	acetaldehyde dehydrogenase / alcohol dehydrogenase 
+K04073	acetaldehyde dehydrogenase 
+K05973	poly(3-hydroxybutyrate) depolymerase 
+K07246	tartrate dehydrogenase/decarboxylase / D-malate dehydrogenase 
+K07250	4-aminobutyrate aminotransferase / (S)-3-amino-2-methylpropionate transaminase / 5-aminovalerate transaminase 
+K07511	enoyl-CoA hydratase 
+K07514	enoyl-CoA hydratase / 3-hydroxyacyl-CoA dehydrogenase / 3,2-trans-enoyl-CoA isomerase 
+K07515	enoyl-CoA hydratase / long-chain 3-hydroxyacyl-CoA dehydrogenase 
+K07516	3-hydroxyacyl-CoA dehydrogenase 
+K07518	hydroxybutyrate-dimer hydrolase 
+K08318	4-hydroxybutyrate dehydrogenase / sulfolactaldehyde 3-reductase 
+K08324	succinate-semialdehyde dehydrogenase 
+K11258	acetolactate synthase II small subunit 
+K13524	4-aminobutyrate aminotransferase / (S)-3-amino-2-methylpropionate transaminase 
+K14268	5-aminovalerate/4-aminobutyrate aminotransferase 
+K14534	4-hydroxybutyryl-CoA dehydratase / vinylacetyl-CoA-Delta-isomerase 
+K16871	4-aminobutyrate---pyruvate transaminase 
+K17761	succinate-semialdehyde dehydrogenase, mitochondrial 
+K17829	crotonyl-CoA reductase 
+K17865	3-hydroxybutyryl-CoA dehydratase 
+K18009	meso-butanediol dehydrogenase / (S,S)-butanediol dehydrogenase / diacetyl reductase 
+K18118	succinyl-CoA:acetate CoA-transferase 
+K18119	succinate-semialdehyde dehydrogenase 
+K18120	4-hydroxybutyrate dehydrogenase 
+K18121	glyoxylate/succinic semialdehyde reductase 
+K18122	4-hydroxybutyrate CoA-transferase 
+K18223	propane 2-monooxygenase large subunit 
+K18224	propane 2-monooxygenase small subunit 
+K18225	propane monooxygenase reductase component 
+K18226	propane monooxygenase coupling protein 
+K18366	acetaldehyde/propanal dehydrogenase 
+K18369	alcohol dehydrogenase 
+K18370	alcohol dehydrogenase 
+K18371	acetone monooxygenase (methyl acetate-forming) 
+K18372	methyl acetate hydrolase 
+K18382	NAD+-dependent secondary alcohol dehydrogenase Adh1 
+K18859	succinate dehydrogenase subunit D 
+K18860	succinate dehydrogenase subunit D 
+K19709	acetate CoA-transferase 
+K20509	carboxybiotin decarboxylase 
+K21317	butane monooxygenase alpha subunit 
+K21318	butane monooxygenase beta subunit 
+K21319	butane monooxygenase gamma subunit 
+K21320	butane monooxygenase reductase 
+K21321	butane monooxygenase regulatory protein 
+K21322	butane monooxygenase hypothetical assembly protein 
+K22881	poly[(R)-3-hydroxyalkanoate] polymerase subunit PhaE 
+K23259	isopropanol dehydrogenase (NADP+) 
+K23351	glutaconyl-CoA/methylmalonyl-CoA decarboxylase subunit gamma 
+K23352	glutaconyl-CoA/methylmalonyl-CoA decarboxylase subunit delta 
+K23756	medium-chain acyl-CoA ligase / lipoate-activating enzyme 
+K25995	succinate dehydrogenase iron-sulfur subunit 
+K25996	succinate dehydrogenase subunit C 
+K26318	fumarate reductase (cytochrome)
