@@ -11,10 +11,11 @@ from datetime import datetime
 import xml.etree.ElementTree as ET
 import pandas as pd
 
-
-
+'''
+The function main takes as input KEGG-orthology ID and directories with alignments-, position-frequency-matrix- and entropy-files.
+Each file is genus-specific.
+'''
 def main(alignment_dir, statistics_dir, pfm_dir, KO_name):
-
     df_ko = pd.DataFrame()
     df_ls = []
     kos_dict = {}
@@ -22,6 +23,7 @@ def main(alignment_dir, statistics_dir, pfm_dir, KO_name):
     stat_dirList = os.listdir(statistics_dir)
     pfm_dirList = os.listdir(pfm_dir)
 
+    # collect all files for each genus in a dictionary, genus name will be a key
     for i in alg_dirList:
         ko = os.path.basename(i).split("_")[1].split(".")[0]
         kos_dict[ko] = [alignment_dir + i]
@@ -31,18 +33,25 @@ def main(alignment_dir, statistics_dir, pfm_dir, KO_name):
     for k in pfm_dirList:
         ko = os.path.basename(k).split("_")[1]
         kos_dict[ko].append(pfm_dir + k)
-
+    
+    # extract each file for a specific genus and preprocess them
     for key in kos_dict:
+        # do not work with Burkholderia as it has a lot of conserved regions, but genus is not presented in human gut library
         if len(kos_dict[key]) == 3 and "Burkhol" not in key:
-#            print(key,KO_name)
             path_to_alignment, path_to_stat, path_to_pfm = kos_dict[key]
             stat_data = pd.read_csv(path_to_stat, sep='\t', index_col=0)
             pfm_data = pd.read_csv(path_to_pfm, sep='\t', index_col=0)
+            
+            # calculate the number of sequences in the alignment file
             number_of_seq = len([rec for rec in SeqIO.parse(path_to_alignment, "fasta")])
+            
+            # calculate the length of the sequence in the alignment
             seq_len = len(pfm_data.columns)
             msa = SeqIO.parse(open(path_to_alignment), 'fasta')
+            
+            # collect all sequences frm the alignment and store them in the list
             alignment = get_alignment(msa)
-            check = perform_gap_processing(number_of_seq, pfm_data, seq_len, path_to_alignment, 23,key,KO_name)
+            check = perform_gap_processing(number_of_seq, pfm_data, seq_len, alignment, 23,key,KO_name)
             if type(check)!=int:
                 df_ls.append(check)
                 print(key)
@@ -51,29 +60,40 @@ def main(alignment_dir, statistics_dir, pfm_dir, KO_name):
         return df_ko
     return -1
 
+'''
+run_blast() performs blast algorithm for the input file. 
+The refernce DB is HumGut library with microbial genome sequences.
+'''
 def run_blast():
-    #with open("kmer.fasta","w") as file:
-    #    file.write(">"+organism+"_1\n")
-    #    file.write(seq)
-    #file.close()
-    os.system("blastn -query kmer.fasta -db /nfs/data/functional_k_mers/humGut/blast_db/HumGut975_library.fna -task blastn-short -num_alignments 500 -qcov_hsp_perc 100 -perc_identity 100 -out result.xml -outfmt 5")
+    os.system("blastn -query kmer.fasta -db /nfs/data/functional_k_mers/humGut/blast_db/HumGut975_library.fna -task blastn-short -num_alignments 1000 -qcov_hsp_perc 100 -perc_identity 100 -out result.xml -outfmt 5")
     return process_xml()
 
-
+'''
+process_xml() function processes the output -xml file from BLAST tool.
+Each Hit is extracted, analysed if the organism matches the organism from the intup file and the number
+of hit that matches the organism of interest is stored in the count_blast variable. count_blast_all variable
+stores the number of all hits in the file.
+'''
 def process_xml():
     taxonomy = pd.read_csv("HumGut.tsv", sep='\t', index_col=None)
     tree = ET.iterparse("result.xml")
-    result = {}
     count_blast=[]
     count_blast_all=[]
     for event, elem in tree:
         if elem.tag == 'Iteration':
             id_full = elem.find("Iteration_query-def")
+            # organism id from blast query
             sp = str(id_full.text).split("_")[0]
+            
+            # KEGG orthology id
             path = str(id_full.text).split("_")[1]
+            
+            # list of hits
             ls = elem.find("Iteration_hits")
             species_ls = []
             count = 0
+
+            #iterate over hits and count thouse that match our organism of interest
             for element in ls:
                 hit = element.find('Hit_def')
                 id = hit.text.split("|")[1]
@@ -81,13 +101,15 @@ def process_xml():
                 if sp in species:
                     count += 1
                 species_ls.append(species)
-            result[str(id_full.text)] = [path, sp, str(count) + " from " + str(len(species_ls))]
             count_blast.append((count,sp))
             count_blast_all.append(str(len(species_ls)))
     return count_blast,count_blast_all
 
 
-
+'''
+get_alignment():
+Store all sequecnes from the alignment in the list.
+'''
 def get_alignment(msa):
     result = []
     for fasta in msa:
@@ -95,27 +117,33 @@ def get_alignment(msa):
         result.append(sequence)
     return result
 
-
-def perform_gap_processing(number_of_seq, pfm_data, seq_len, path_to_alignment, k_size, organism,KO):
+'''
+perform_gap_processing():
+Input os number of sequences in the alignment, all corresponding alignmnet tables, k-mer size, current genus and current KO
+'''
+def perform_gap_processing(number_of_seq, pfm_data, seq_len, alignment, k_size, organism,KO):
+    # exclude alignment with less than 15 sequences ---> no conservaton analysis
     if number_of_seq < 15:
         return -1
-    #if "Burkhol" in organism:
-    #    return -1
+    # get indices of the continous gaps
     gaps_positions = extract_gaps_indices(number_of_seq, pfm_data, seq_len)
-    msa = SeqIO.parse(open(path_to_alignment), 'fasta')
-    alignment = []
-    for fasta in msa:
-        sequence = str(fasta.seq)
-        alignment.append(sequence)
+
+    # if the are no consecutive gaps, continue processing
     if len(gaps_positions) == 0:
         sequences, pfm_data_new = alignment, pfm_data
     else:
+    # if gaps found, remove them from alignment and input tables 
         sequences, pfm_data_new = remove_gaps(gaps_positions, pfm_data, alignment)
+
+    # calculate new sequence lenght                                    
     seq_len = len(sequences[0])
+
+    # find indices of the conserved regions
     conservation_positions = extract_sequence_indices(k_size, number_of_seq, pfm_data_new, seq_len)
 
     map_of_kmers = {}
 
+    # if regions more than one conserved region, extract only the most occuring ones
     for indices in conservation_positions:
         start = indices[0]
         end = indices[1]
@@ -132,7 +160,8 @@ def perform_gap_processing(number_of_seq, pfm_data, seq_len, path_to_alignment, 
                                        (v == max_value) and (v >= math.ceil(number_of_seq / 2))]
         if len(kmers_candidates_atposition) > 0:
             map_of_kmers[(start, end)] = kmers_candidates_atposition
-
+    
+    # sort the kmers and their counts descendingly
     d_descending = OrderedDict(sorted(map_of_kmers.items(), key=lambda kv: kv[1][0][1], reverse=True))
 
     column_kmer = []
@@ -142,6 +171,10 @@ def perform_gap_processing(number_of_seq, pfm_data, seq_len, path_to_alignment, 
     column_blast = []
     column_blast_hits = []
     count = 0
+
+    # create a data frame from the extracted infromation: 
+    # KO, kmer, in count in the alignment file, corresponding genus and blast hits
+    
     if len(d_descending) > 0:
         with open("kmer.fasta","w") as file:
             for key, value in d_descending.items():
@@ -150,12 +183,10 @@ def perform_gap_processing(number_of_seq, pfm_data, seq_len, path_to_alignment, 
                     column_kmer.append(kmer[0])
                     column_count.append(str(kmer[1]) + " from " + str(kmer[2]))
                     column_organims.append(organism)
+                    # save all kmers into the file in order to run blast
                     file.write(">"+organism+"_"+KO+str(count)+"\n")
                     file.write(kmer[0]+"\n")
                     count+=1
-#                blast_org,blast_all = run_blast(kmer[0],organism)
-#                column_blast.append(blast_org)
-#                column_blast_hits.append(blast_all)
         column_blast, column_blast_hits = run_blast()
         dt = {"KO_path": column_path,
                   "Kmer": column_kmer,
@@ -225,7 +256,6 @@ def extract_gaps_indices(number_of_sequences, data_df, seq_length):
     i = 0
     gap = False
     saver = 0
-
     result = []
     while i < seq_length:
         if data_df[str(i)].sum() <= number_of_sequences * 0.2 and not gap:
@@ -311,8 +341,6 @@ def remove_gaps(gapspositions, pfm_data, alignment):
                 new_g = new_g + g[end_gap_prev:start_gap]
                 new_t = new_t + t[end_gap_prev:start_gap]
                 new_c = new_c + c[end_gap_prev:start_gap]
-
-
             else:
                 end_gap_prev = gapspositions[i - 1][1]
                 new_a = new_a + a[end_gap_prev:start_gap]
@@ -329,7 +357,7 @@ def remove_gaps(gapspositions, pfm_data, alignment):
     new_g.insert(0, "G")
     new_c.insert(0, "C")
     new_t.insert(0, "T")
-
+    
     new_pfm = pd.DataFrame([new_a, new_c, new_g, new_t])
     new_pfm = new_pfm.set_index(0)
 
