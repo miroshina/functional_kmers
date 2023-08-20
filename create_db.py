@@ -52,6 +52,7 @@ def main(alignment_dir, statistics_dir, pfm_dir, KO_name):
             # collect all sequences frm the alignment and store them in the list
             alignment = get_alignment(msa)
             check = perform_gap_processing(number_of_seq, pfm_data, seq_len, alignment, 23,key,KO_name)
+            
             if type(check)!=int:
                 df_ls.append(check)
                 print(key)
@@ -119,7 +120,7 @@ def get_alignment(msa):
 
 '''
 perform_gap_processing():
-Input os number of sequences in the alignment, all corresponding alignmnet tables, k-mer size, current genus and current KO
+Input is number of sequences in the alignment, all corresponding alignmnet tables, k-mer size, current genus and current KO
 '''
 def perform_gap_processing(number_of_seq, pfm_data, seq_len, alignment, k_size, organism,KO):
     # exclude alignment with less than 15 sequences ---> no conservaton analysis
@@ -143,7 +144,7 @@ def perform_gap_processing(number_of_seq, pfm_data, seq_len, alignment, k_size, 
 
     map_of_kmers = {}
 
-    # if regions more than one conserved region, extract only the most occuring ones
+    # if there are more than one conserved region, extract only the most occuring ones
     for indices in conservation_positions:
         start = indices[0]
         end = indices[1]
@@ -156,6 +157,7 @@ def perform_gap_processing(number_of_seq, pfm_data, seq_len, alignment, k_size, 
                 count_kmers_variability[kmer] += 1
 
         max_value = max(count_kmers_variability.values())
+        # list of most occuring kmers and their position  
         kmers_candidates_atposition = [(k, v, number_of_seq) for k, v in count_kmers_variability.items() if
                                        (v == max_value) and (v >= math.ceil(number_of_seq / 2))]
         if len(kmers_candidates_atposition) > 0:
@@ -201,7 +203,13 @@ def perform_gap_processing(number_of_seq, pfm_data, seq_len, alignment, k_size, 
     return -1
 
 
-
+'''
+extract_sequence_indices():
+Input is the length of a kmer, number of sequences in the alignment, all corresponding alignmnet tables, length of sequences in the alignment
+This function searches for the conserved regions via looking at the position frequency matrix. It finds regions, where each nucleotide occurs
+at least in 60% of all squences, it will save it into a list. If the lenght of such region is greater or equal than len_threshold, then this
+region is saved.
+'''
 def extract_sequence_indices(len_threshold, number_of_sequences, data_df, seq_length):
     i = 0
     gap = True
@@ -209,25 +217,33 @@ def extract_sequence_indices(len_threshold, number_of_sequences, data_df, seq_le
     result = []
     index_saver = -1
     skipped_pos = 0
+    
+    # iterate over position frequency matrix
     while i < seq_length:
+        # get a column from m<trix
         k = data_df[str(i)]
+
+        # check if there is a nucleotide at this position that occurs at least in 60% of sequences, if so, go to next one 
         if (not (k > number_of_sequences * 0.6).any()) and counter == 0:
             i += 1
             gap = True
             counter = 0
             continue
+        # stop iterating if there isn't a conserved position and check if the previously inspected region has an appropriate length
         elif (not (k > number_of_sequences * 0.6).any()) and counter >= len_threshold:
             result.append((index_saver, i))
             i += 1
             gap = True
             counter = 0
             continue
+        # if the previously inspected region is not long enough, then skip it and go further
         elif (not (k > number_of_sequences * 0.6).any()) and (0 < counter < len_threshold):
             i += 1
             index_saver = -1
             gap = True
             counter = 0
             continue
+        # if the current position is still conserved, go to next one
         elif ((k > number_of_sequences * 0.6).any()):
             if gap:
                 counter = 1
@@ -240,6 +256,7 @@ def extract_sequence_indices(len_threshold, number_of_sequences, data_df, seq_le
 
     kmer_indices = []
 
+    # split found regions already into kmers with the input length and sve them into a list
     for indices in result:
         start = indices[0]
         end = indices[1]
@@ -252,6 +269,13 @@ def extract_sequence_indices(len_threshold, number_of_sequences, data_df, seq_le
     return kmer_indices
 
 
+'''
+extract_gaps_indices():
+Input is the number of sequences in the alignment, position frequency matrix, length of sequences in the alignment
+This function searches for the conserved gaps in the alignment via looking at the position frequency matrix. It finds regions, where a gap occurs 
+in 80% of all squences.
+The procedure is very similar to what function extract_sequence_indices() does.
+'''
 def extract_gaps_indices(number_of_sequences, data_df, seq_length):
     i = 0
     gap = False
@@ -279,11 +303,17 @@ def extract_gaps_indices(number_of_sequences, data_df, seq_length):
 
     return result
 
-
+'''
+remove_gaps():
+Input is indices of the conserved gaps, position frequency matrix, sequence alignment
+This function removes found above gaps from the alignment. Additionaly, it adjusts the position frequency matrix, so that one can further
+look for the conserved nucleotide regions.
+'''
 def remove_gaps(gapspositions, pfm_data, alignment):
     sequences_with_nogaps = []
     new_conservation_data = []
 
+    # rows from PFM are saved to list
     a = pfm_data.loc["A"].tolist()
     c = pfm_data.loc["C"].tolist()
     g = pfm_data.loc["G"].tolist()
@@ -294,6 +324,7 @@ def remove_gaps(gapspositions, pfm_data, alignment):
     new_t = []
     new_g = []
 
+    # this part is responsible for gap removal given a gap index
     num_gaps = len(gapspositions)
     for sequence in alignment:
         result_sequence = []
@@ -316,8 +347,10 @@ def remove_gaps(gapspositions, pfm_data, alignment):
                     result_sequence.append(sequence[end_gap_prev:start_gap])
                     result_sequence.append(sequence[end_gap:])
 
+        # save new sequence without gaps to a list
         sequences_with_nogaps.append("".join(result_sequence))
 
+    # remove gaps from PFM and save the new data to a list
     if num_gaps == 1:
         new_a = a[0:start_gap] + a[end_gap:]
         new_g = g[0:start_gap] + g[end_gap:]
@@ -364,11 +397,14 @@ def remove_gaps(gapspositions, pfm_data, alignment):
     new_index_data = [str(i) for i in range(0, len(sequences_with_nogaps[0]))]
     new_pfm.columns = new_index_data
 
+    # result a list of sequences with no gaps and the coresponding PFM
     return sequences_with_nogaps, new_pfm
 
 
 if __name__ == '__main__':
 
+    # for each KO execute the functions above. All alignments, PFM and other data should be saved into corresponding directories:
+    # <KO>_msa/, stat/, pfm/
     KOs_dir = sys.argv[1]
     KOs_dirList = os.listdir(KOs_dir)
     df_ls = []
@@ -377,9 +413,12 @@ if __name__ == '__main__':
         stat_dir = KOs_dir + ko + "/" + "stat/"
         pfm_dir = KOs_dir + ko + "/" + "pfm/"
         check = main(align_dir, stat_dir, pfm_dir, ko)
+        # save all output tables to a list
         if type(check) != int:
             df_ls.append(check)
     if len(df_ls)>0:
+        # concatenate all tables together to get one large table for all KOs
         df = pd.concat(df_ls)
-        print(df)
+        #print(df)
+        # save the table to a file <KO_dir>_matrix.tsv 
         df.to_csv(KOs_dir[:-1]+"_matrix.tsv",sep="\t")
