@@ -1,9 +1,15 @@
 import sys
 import os
 
+# directory with all matrices
 mat_dir = sys.argv[1]
+# file with enzyme names and KEGG ids
 enzymes = sys.argv[2]
 enz_dict = {}
+# file name for the output matrix (tsv)
+out_file = sys.argv[3]
+
+# read enzyme file and save all info into hash map
 with open(enzymes,"r") as ff:
     for line in ff:
         ko = line.split("\t")[0].rstrip()
@@ -13,7 +19,10 @@ with open(enzymes,"r") as ff:
 mat_dirList = os.listdir(mat_dir)
 distinct_paths = set()
 distinct_kmers = set()
-with open("final_matrix_1906.tsv","w") as file:
+
+# write info from all matrices into one big matrix, but include only those sequences that have blast hits to one certain organism more than 90% 
+# of the time. Additionaly count number of distinct kmers and distinct pathways/KOs
+with open(out_file,"w") as file:
     for mat in mat_dirList:
         with open(mat_dir+"/"+mat, "r") as f:
             for line in f:
